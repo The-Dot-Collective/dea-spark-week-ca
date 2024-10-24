@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dea-spark-week-ca"
+version = "0.1.0"
+description = "Spark_exercises_week"
+authors = ["Carlos Arocha"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pyspark = "^3.5.3"
+pylint = "^3.3.1"
+pre-commit = "^4.0.1"
+isort = "^5.13.2"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
