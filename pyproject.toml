@@ -4,9 +4,14 @@ version = "0.1.0"
 description = "Spark_exercises_week"
 authors = ["Carlos Arocha"]
 readme = "README.md"
+packages = [{include = "spark_practices"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+mypy = "^1.13.0"
+setuptools = "^75.2.0"
+pandas = "^2.2.3"
+pyarrow = "^17.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -15,6 +20,7 @@ pylint = "^3.3.1"
 pre-commit = "^4.0.1"
 isort = "^5.13.2"
 black = "^24.10.0"
+pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
