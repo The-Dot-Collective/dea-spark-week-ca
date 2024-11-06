@@ -167,3 +167,22 @@ if __name__ == "__main__":
             eval(f"{functions[key]}")
 
     spark.stop()
+
+
+### **Question 1:**
+# What are the advantages of using DataFrames over RDDs for structured data?
+# RDD doesn't work with structured data, less efficient when working with big data and has lack
+# of built-in query functionalities so is harder to process, parse, ETL, etc the data.
+
+### **Question 2:**
+# How does Spark SQL utilize the Catalyst optimizer to improve query performance?
+# The Catalyst optimizer before running the query creates a plan, analyse the real data to use,
+# minimize the user of resources and finally do a refined execution that helps to improve the
+# performance fo the queries.
+
+### **Question 3:**
+# In what situations would you use Spark SQL over the DataFrame API, and why?
+# In situations where ths syntax with SQL tends to be easier to implement queries than dataframes.
+# Sometimes for readability, sometimes for implementing SQL-specific features like windows,
+# sometimes because an integration makes easier to implement SQL queries, and sometimes
+# because SQL queries makes simpler to work with multiple tables/vies.

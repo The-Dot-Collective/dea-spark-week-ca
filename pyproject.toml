@@ -12,6 +12,7 @@ mypy = "^1.13.0"
 setuptools = "^75.2.0"
 pandas = "^2.2.3"
 pyarrow = "^17.0.0"
+grpcio = "^1.67.1"
 
 
 [tool.poetry.group.dev.dependencies]

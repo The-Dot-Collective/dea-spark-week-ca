@@ -88,12 +88,19 @@ if __name__ == "__main__":
 
 # Reflection Question 1:
 # What is the difference between a transformation and an action in Spark?
-# Transformation creates a new RDD from applying a function or a transformation to the data inside an already existing RDD. It creates an execution to the data that will run at the moment some action press the button, like asking for the resulting data with the collect() method, or counting the results with count() method.
+# Transformation creates a new RDD from applying a function or a transformation to the data
+# inside an already existing RDD. It creates an execution to the data that will run at the
+# moment some action press the button, like asking for the resulting data with the collect() method,
+# or counting the results with count() method.
 
 # Reflection Question 2:
 # What is lazy evaluation, and why does it improve Spark's performance?
-# Lazy evaluation refers to what exactly I described before. The way that spark transform the data, creates first an execution that is triggered when you finally want the transformed data and call to collect it, a call that will trigger first the transformation.
+# Lazy evaluation refers to what exactly I described before. The way that spark transform the data,
+# creates first an execution that is triggered when you finally want the transformed data and call
+# to collect it, a call that will trigger first the transformation.
 
 # Reflection Question 3:
 # How does persistence help in improving the performance of Spark jobs?
-# Persistence saves the RDD data or previous execution in memory so future similar calls have quicker access to the information. Is like helping not to trigger a similar transformation again by a similar action, avoiding repeating calculations.
+# Persistence saves the RDD data or previous execution in memory so future similar calls have quicker
+# access to the information. Is like helping not to trigger a similar transformation again by a
+# similar action, avoiding repeating calculations.
